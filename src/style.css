@@ -1,0 +1,242 @@
+html > * {
+  font-size: 16px;
+  margin: 0px;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: skyblue;
+  gap: 10px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+main h2 {
+  font-size: 2.6rem;
+}
+main h3 {
+  font-size: 2rem;
+}
+main h4 {
+  font-size: 1.4rem;
+}
+main h5 {
+  font-size: 1.4rem;
+}
+main h6 {
+  font-size: 0.9rem;
+}
+main label {
+  font-size: 1rem;
+}
+
+.switch-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.switch-container > label {
+  font-weight: 600;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  background-color: #ccc;
+  border-radius: 17px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.3s;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: #4caf50; /* Change the background color when the switch is checked */
+}
+
+.toggle-label::before {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label::before {
+  transform: translateX(
+    26px
+  ); /* Move the knob to the right when the switch is checked */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 40px;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  color: white;
+  background-color: green;
+  border: none;
+  font-weight: 600;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+button:hover {
+  color: white;
+  background-color: rgb(7, 156, 7);
+  cursor: pointer;
+}
+
+#content {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  grid-template-rows: min-content min-content;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.left-side-data > * {
+  margin: 0px;
+}
+
+.left-side-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.right-side-data > * {
+  margin: 0px;
+}
+
+.right-side-data {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.additional-item {
+  width: 100%;
+}
+.additional-item > * {
+  margin: 0px;
+  align-items: flex-start;
+}
+
+.forecasted > h3 {
+  margin: 10px 0px;
+}
+
+.forecasted {
+  grid-column: 1/-1;
+}
+
+.forecasted-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forecasted-item {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.forecasted-item > * {
+  margin: 0px;
+}
+
+.forecasted-item > h4 {
+  margin-bottom: 10px;
+}
+
+.forecasted-item > .icon {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+
+.forecasted-item > .icon > img {
+  width: 100%;
+  align-items: center;
+}
