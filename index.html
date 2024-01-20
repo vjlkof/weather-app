@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer="defer" src="main.js"></script>
+  </head>
+  <body>
+    <h1>Weather app</h1>
+    <div class="switch-container">
+      <label id="unit">Celcius</label>
+      <div class="switch">
+        <input type="checkbox" id="toggle" class="toggle-input" />
+        <label for="toggle" class="toggle-label"></label>
+      </div>
+    </div>
+    <section class="search-container">
+      <label for="search">
+        You can search any location, if you don't find it, you can try adding
+        more info such as country, city, etc
+        <div class="input-container">
+          <input
+            id="search"
+            type="text"
+            name="search"
+            placeholder="Search..."
+          />
+          <button id="search-button" type="button">></button>
+        </div>
+      </label>
+    </section>
+    <section id="content">
+      <main id="main">
+        <div class="left-side-data">
+          <h2>Sunny</h3>
+          <h4>Garin</h4>
+          <h6>Saturday 23-10-24 14:30hs</h6>
+          <h1>26 °C</h1>
+          <h4>Light intensity drizzle</h4>
+          <div class="icon">
+            <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Sunny" />
+          </div>
+          <h5>Min 24 °C - Max 30 °C</h5>
+        </div>
+        <div class="right-side-data">
+          <div class="additional-item">
+            <label>Feels Like</label>
+            <h3>20 °C</h3>
+          </div>
+          <div class="additional-item">
+            <label>Humidity</label>
+            <h3>80 %</h3>
+          </div>
+          <div class="additional-item">
+            <label>Pressure</label>
+            <h3>1012 hp</h3>
+          </div>
+          <div class="additional-item">
+            <label>visibility</label>
+            <h3>10 km</h3>
+          </div>
+          <div class="additional-item">
+            <label>Wind Speed</label>
+            <h3>21 km/h</h3>
+          </div>
+        </div>
+        <div class="forecasted">
+          <h3>Daily</h3>
+          <div class="forecasted-data">
+            <div class="forecasted-item">
+              <h4>Sunday</h4>
+              <h3>20 °C</h3>
+              <h6>20 °C</h6>
+              <div class="icon">
+                <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Sunny" />
+              </div>
+            </div>
+          </div>
+        </div>  
+      </main>
+    </section>
+  </body>
+</html>
