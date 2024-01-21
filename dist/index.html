@@ -33,50 +33,41 @@
     <section id="content">
       <main id="main">
         <div class="left-side-data">
-          <h2>Sunny</h3>
-          <h4>Garin</h4>
-          <h6>Saturday 23-10-24 14:30hs</h6>
-          <h1>26 °C</h1>
-          <h4>Light intensity drizzle</h4>
+          <h2 id="condition"></h3>
+          <h4 id="name"></h4>
+          <h6 id="datetime"></h6>
+          <h1 id="current-temp"></h1>
+          <h4 id="description"></h4>
           <div class="icon">
-            <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Sunny" />
+            <img id="icon-img" src="" alt="" />
           </div>
-          <h5>Min 24 °C - Max 30 °C</h5>
+          <h5 id="min-max"></h5>
         </div>
         <div class="right-side-data">
           <div class="additional-item">
-            <label>Feels Like</label>
-            <h3>20 °C</h3>
+            <label >Feels Like</label>
+            <h3 id="feels-like"></h3>
           </div>
           <div class="additional-item">
             <label>Humidity</label>
-            <h3>80 %</h3>
+            <h3 id="humidity"></h3>
           </div>
           <div class="additional-item">
             <label>Pressure</label>
-            <h3>1012 hp</h3>
+            <h3 id="pressure"></h3>
           </div>
           <div class="additional-item">
             <label>visibility</label>
-            <h3>10 km</h3>
+            <h3 id="visibility"></h3>
           </div>
           <div class="additional-item">
             <label>Wind Speed</label>
-            <h3>21 km/h</h3>
+            <h3 id="wind-speed"></h3>
           </div>
         </div>
         <div class="forecasted">
           <h3>Daily</h3>
-          <div class="forecasted-data">
-            <div class="forecasted-item">
-              <h4>Sunday</h4>
-              <h3>20 °C</h3>
-              <h6>20 °C</h6>
-              <div class="icon">
-                <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Sunny" />
-              </div>
-            </div>
-          </div>
+          <div class="forecasted-data"></div>
         </div>  
       </main>
     </section>
