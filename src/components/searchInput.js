@@ -10,6 +10,7 @@ export default function searchInput() {
   });
 
   searchButton.addEventListener("click", async () => {
+    event.preventDefault();
     const switchValue = document.getElementById("toggle").checked;
     home(searchValue, switchValue);
     searchInput.dataset.oldValue = searchValue;
